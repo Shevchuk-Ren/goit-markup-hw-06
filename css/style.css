@@ -138,9 +138,9 @@ body {
   transition: opacity 250ms var(--timing-fm), visibility 250ms var(--timing-fm);
 }
 .backdrop.is-hidden {
-  /* visibility: hidden;
+  visibility: hidden;
   opacity: 0;
-  pointer-events: none; */
+  pointer-events: none;
 }
 .modal {
   position: absolute;
@@ -173,14 +173,32 @@ body {
 .modal-svg {
   transition: fill 250ms var(--timing-fm);
 }
-.modal-svg:hover {
+.modal-button:hover {
   outline: none;
   fill: var(--accent-color);
 }
+
 .modal-button:focus {
   outline: none;
   box-shadow: 0 0 0 1px var(--accent-color);
   border-radius: 50%;
+  fill: var(--accent-color);
+}
+.form {
+  outline: 2px solid red;
+}
+.comment-field,
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-field {
+  outline: 1px solid green;
+
+  margin-bottom: 10px;
+}
+.comment-field {
+  margin-bottom: 20px;
 }
 /*container*/
 .container {
