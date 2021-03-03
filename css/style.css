@@ -108,13 +108,24 @@ body {
   transition: color 250ms var(--timing-fm),
     background-color 250ms var(--timing-fm), box-shadow 250ms var(--timing-fm);
 }
-.button.secondary:focus,
-.button.primary:focus {
+.button.secondary:focus {
   outline: none;
   box-shadow: 0 0 0 1px var(--accent-color);
   border-radius: 4px;
 }
-
+.button.primary:focus {
+  outline: none;
+  background-color: #188ce8;
+  color: var(--primery-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button.primary:hover,
+.button.primary:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--primery-white-color);
@@ -122,7 +133,6 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  /* transition: background-color 250ms var(--timing-fm); */
 }
 /*модальное окно*/
 .backdrop {
