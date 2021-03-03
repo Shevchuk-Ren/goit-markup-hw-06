@@ -216,8 +216,11 @@ body {
 
   /* outline: 1px solid green; */
 }
+.tel-svg:hover {
+  fill: #2196f3;
+}
 .form-field input {
-  padding: 12px 12px;
+  padding: 12px 42px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -243,12 +246,11 @@ body {
 .checkbox a {
   color: var(--accent-color);
 }
-.form-field input {
-}
-.form-tel {
+
+.form-icon {
   position: absolute;
   left: 12px;
-  bottom: 11px;
+  bottom: 8px;
 }
 /*container*/
 .container {
