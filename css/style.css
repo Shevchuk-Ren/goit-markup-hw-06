@@ -228,6 +228,8 @@ body {
 
   /* outline: 1px solid green; */
 }
+.check {
+}
 .textarea::placeholder {
   font-size: 14px;
   line-height: 1.142;
@@ -252,15 +254,20 @@ body {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border 250ms var(--timing-fm);
+}
+.form-icon .input:hover + .tel-svg {
+  transition: fill 250ms var(--timing-fm);
 }
 .form-icon .input:hover + .tel-svg {
   fill: var(--accent-color);
-  transition: fill 250ms var(--timing-fm);
+}
+.form-icon .input:focus-within + .tel-svg {
+  fill: var(--accent-color);
 }
 .form-icon .input:hover {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  transition: border 250ms var(--timing-fm);
 }
 .comment-field .textarea:focus,
 .form-icon .input:focus {
@@ -268,9 +275,7 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
-.form-icon .input:focus + .tel-svg {
-  fill: var(--accent-color);
-}
+
 .comment-field .textarea {
   font-family: inherit;
   font-size: 14px;
@@ -287,14 +292,18 @@ body {
 }
 .checkbox {
   display: block;
+
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  outline: 1px solid red;
 }
 .checkbox a {
   color: var(--accent-color);
 }
-
+.input-checbox {
+  /* appearance: none; */
+}
 .form-icon {
   position: relative;
 }
