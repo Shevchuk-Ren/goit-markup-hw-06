@@ -388,6 +388,18 @@
                             </a></li>
                     </ul>
             </div>
+            <div class="footer-c">
+                <b class="c-content">Подпишитесь на рассылку</b>
+                <form>
+                
+                <input class="input-footer" type="email" name="mail" id="mail" placeholder="E-mail">
+                <button class="button fourth" type="submit">
+                    <span>Подписаться</span>
+                <svg class="send-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#send"></use>
+                </svg></button>
+            </form>
+        
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>  
@@ -439,11 +451,14 @@
                 <textarea class="textarea" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
                 </div>
                 <div class="checkbox">
+                   
+                 <label class="label-checkbox">
+                    <input class="input-checbox" type="checkbox" name="policy" id="policy" value="text" checked>
                     <svg class="check" width="16px" height="15px">
-                        <use href="./images/icons.svg#check"></use>
+                        <use class="check-icon" href="./images/icons.svg#icone-check"></use>
+                       
                     </svg>
-                <input class="input-checbox" type="checkbox" name="policy" id="policy" value="text">
-                <label class="label-checkbox" for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                <span> Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></span></label>
                 
             </div>
                 <button type="submit" class="button third">Отправить</button>
