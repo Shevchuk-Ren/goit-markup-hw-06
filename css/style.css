@@ -128,7 +128,8 @@ body {
   border-radius: 4px;
 }
 .button.primary:focus,
-.button.secondary:focus {
+.button.secondary:focus,
+.button.fourth:focus {
   outline: none;
   box-shadow: 0 0 0 1px var(--accent-color);
   border-radius: 4px;
@@ -309,6 +310,7 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: opacity 250ms var(--timing-fm), visibility 250ms var(--timing-fm);
 }
 .checkbox {
   display: block;
@@ -931,6 +933,7 @@ body {
   background-color: transparent;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: border 250ms var(--timing-fm);
 }
 .input-footer::placeholder {
   font-size: 16px;
