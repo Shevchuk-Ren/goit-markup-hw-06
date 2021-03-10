@@ -354,6 +354,7 @@ body {
 /*container*/
 .container {
   width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -369,6 +370,7 @@ body {
 /*header*/
 .line {
   max-width: 100%;
+
   border-bottom: 1px solid #ececec;
 }
 /*line*/
@@ -442,7 +444,7 @@ body {
 }
 .nav-item {
   padding-top: 31px;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
 }
 .nav-item.current {
   color: var(--accent-color);
@@ -480,8 +482,6 @@ body {
 }
 
 .envelope-item {
-  padding-top: 31px;
-  padding-bottom: 31px;
   color: inherit;
 }
 .envelope,
